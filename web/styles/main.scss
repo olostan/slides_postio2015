@@ -229,8 +229,14 @@ body.s5 {
     #grpc: up(100) delay(0.5);
     #grpc_d: up(100) opacity(0.4) delay(0.3);
     #grpc_d2: show up(280) delay(0);
-
 }
-
+#io: down(500);
+.s26 {
+    #grpc: up(300) delay(0.5) hide;
+    #grpc_d: up(400) hide;
+    #grpc_d2: up(500) hide;
+    #cloud_l: up(50) hide;
+    #io: up(500) show;
+}
 
 
