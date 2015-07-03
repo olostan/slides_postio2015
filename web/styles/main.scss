@@ -1,0 +1,236 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+html, body {
+    font-family: 'Roboto', sans-serif;
+    height: 100%;
+    width: 100%;
+    padding:0;
+    margin:0;
+    background-color: white;
+    perspective: 900px;
+    overflow: hidden;
+    color: #0facc1;
+}
+.hidden { opacity:0; }
+controls {
+    font-size: 12px;opacity:0.3;
+}
+controls:hover{ opacity:1;}
+symbol {
+    font-size: 120px;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    opacity:0;
+}
+comment {
+    background-color: #222;
+}
+
+.s1 {
+    #logo: show;
+}
+#logo_p{  ::down(500); text-shadow: 0 15px 20px #888;}
+.s2 {
+    #logo: up(100);
+    #logo_p: up(300) show;
+}
+#logo_p2{  ::down(500); text-shadow: 0 15px 20px #888;}
+.s3 {
+    #logo: up(100);
+    #logo_p: up(150);
+    #logo_p2: up(300) show;
+}
+
+#c {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: #0facc1;
+    ::left(280) down(220);
+}
+@-webkit-keyframes click {
+    0%   { width: 50px;height: 50px;  border-radius: 50px;  }
+    100%   { width: 2500px;height: 2500px;  border-radius: 2500px;left:-300px;top:-500px;  }
+}
+#web_l{ ::down(500);color: #e0f7fa;text-shadow: 0 15px 20px #008297;}
+.s4 {
+    #c {
+        ::show;
+        -webkit-animation: click 1.3s ease-out 0.5s forwards;
+    }
+    #logo: hide;
+    #logo_p:hide;
+    #logo_p2:hide delay(0.2);
+    #web_l:show up(500) delay(0.6);
+}
+
+body.s5 {
+    background-color: #0facc1;
+}
+#web_poly img { width: 500px;}
+#web_poly: down(400);
+.s5 {
+    #c: hide;
+    #web_l: up(300);
+    #web_poly:show up(400) delay(0.1);
+}
+#web_poly2 img { width: 800px;}
+#web_poly2: up(500);
+
+.s6 {
+    #web_l { opacity: 0.3;}
+    #web_poly: rotate(30) down(200);
+    #web_poly2: down(400) show;
+}
+#web_bg {
+    width: 2000px; height: 300px; background-color: rgba(255,255,255,0.5);::left(1500);
+    box-shadow: 0 10px 20px #008297;
+}
+#web_p1{ ::down(300) right(190); color: black;font-size:60px;}
+.s7 {
+    #web_poly: rotate(-30) left(300) up(150) scale(0.3,0.3);
+    #web_poly2: left(300) down(50) scale(0.5,0.5);
+    #web_bg: show right(1200);
+    #web_p1: show up(360) delay(1);
+}
+#web_p2{ ::down(300) right(190); color: black;font-size:60px;}
+#web_p2_u{ ::down(300) right(290); color: black;font-size:20px;}
+#web_p2_i: down(400) scale(0.8,0.8) right(290);
+.s8 {
+    #web_p1: up(50) hide delay(0.2);
+    #web_p2: show up(400);
+    #web_p2_i: show up(360) delay(0.5);
+    #web_p2_u: show up(330) delay(0.8);
+}
+#web_p_url{ ::down(350) right(70); color: black;font-size:50px;}
+.s9 {
+    #web_p2: up(50) hide delay(0);
+    #web_p2_i: up(50) hide delay(0.1);
+    #web_p2_u: up(50) hide delay(0.2);
+    #web_p_url: show up(280) delay(0.4);
+    #web_poly: right(450) up(110);
+    #web_poly2: right(150);
+}
+#web_site: scale(0.3,0.3) left(500);
+.s10 {
+    #web_poly: right(900) hide;
+    #web_poly2: right(900) hide;
+    #web_p_url: right(900) hide;
+    #web_bg:  right(2200) delay(0.7);
+    #web_site: show delay(1) scale(0.5,0.5) right(500);
+}
+#web_site_gh: rotate(-90) scale(0.8,0.8);
+.s11 {
+    #web_site: rotate(90) delay(0);
+    #web_site_gh: rotate(90) delay(0.6) show;
+    #web_bg: hide;
+}
+#web_push: down(500) scale(0.5,0.5);
+.s12 {
+    #web_site:hide;
+    #web_site_gh: delay(0) scale(-0.5,-0.5) right(500) hide;
+    #web_push:show up(400) delay(0.4);
+}
+#web_arc{ ::up(400); box-shadow: 0 15px 30px #008297; line-height: 0;}
+#web_arc_t { ::up(400); text-shadow: 0 0 10px #333;}
+.s13 {
+    #web_push:hide down(400) delay(0.1);
+    #web_arc: down(400) show;
+    #web_arc_t: down(250) show delay(0.3);
+}
+#web_arc2: up(400);
+.s14 {
+    #web_arc: down(400) hide;
+    #web_arc2: down(400) show;
+    #web_arc_t: down(450);
+    #c { background-color: white;-webkit-animation:none;::right(480) up(520);}
+}
+
+#cloud_l{ ::up(600); color: #008297;text-shadow: 0 15px 20px #888;}
+
+.s15 {
+    #c {
+        ::show;
+        -webkit-animation: click 1.3s ease-out 0.5s forwards;
+    }
+    #web_l:hide;
+    #web_arc_t: down(450) delay(0);
+    #web_arc2: down(500) hide delay(0.1);
+    #cloud_l:show down(600) delay(0.8);
+}
+#kub_logo: down(400);
+#kub_logo img { -webkit-filter: drop-shadow(0 12px 20px #333); }
+.s16 {
+    #cloud_l: up(320) opacity(0.4) delay(0);
+    #kub_logo: show up(400) delay(0.3);
+}
+#kub_t { ::right(620);color: #2a55f4; text-shadow: 0 12px 20px #999;}
+.s17 {
+    #kub_logo: scale(0.3,0.3) left(350) delay(0);
+    #kub_t: left(550) show;
+}
+#kub_d {
+    color: #2a55f4; font-size: 62px; width: 800px; text-align: center;::down(500);
+}
+.s18 {
+    #kub_logo: up(200) delay(0.5);
+    #kub_t: up(200) delay(0.4);
+    #kub_d: up(450) show;
+}
+#kub_g img { width: 400px;}
+#kub_g: down(400);
+.s19 {
+    #kub_logo: left(60) down(150) delay(0.2);
+    #kub_t: rotate(0,0,90) delay(0.2) right(300) down(200) scale(0.7,0.7);
+    #kub_d: up(450) hide delay(0.3);
+    #kub_g:  show up(350) delay(0);
+}
+#gce: up(400);
+#gce_t{ ::up(400);font-size:64px;color:#5095f0;}
+.s20 {
+    #kub_logo: down(400) hide;
+    #kub_t: down(400) hide;
+    #kub_g: down(400) hide;
+    #gce: down(400) show;
+    #gce_t: down(550) show delay(0.5);
+}
+#gcp: right(400);
+.s21 {
+    #gce: left(430) delay(0.1);
+    #gcp: show left(400);
+    #gce_t:  delay(0) left(300) hide;
+}
+#gcp_1{ ::down(450);color:#5095f0;font-size:84px;}
+#gcp_2{ ::down(450);color:#5095f0;font-size:84px;}
+.s22 {
+    #gce: up(100);
+    #gcp: up(100);
+    #gcp_1: up(300) show;
+}
+.s23 {
+    #gce: up(50);
+    #gcp: up(50);
+    #gcp_1: up(50) delay(0.3);
+    #gcp_2: up(250) show;
+}
+#grpc img { width: 800px;-webkit-filter: drop-shadow(0 12px 20px #666);}
+#grpc: down(500);
+#grpc_d{ ::down(500);font-size:42px;width:900px; text-align: center;}
+#grpc_d2{ ::down(500);font-size:42px;width:900px; text-align: center;}
+.s24 {
+    #gce: up(350) hide;
+    #gcp: up(250) hide;
+    #gcp_1: up(450) hide;
+    #gcp_2: up(450) hide;
+    #grpc: show up(500);
+    #grpc_d: show up(300) delay(0.4);
+}
+.s25 {
+    #grpc: up(100) delay(0.5);
+    #grpc_d: up(100) opacity(0.4) delay(0.3);
+    #grpc_d2: show up(280) delay(0);
+
+}
+
+
+
