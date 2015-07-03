@@ -613,6 +613,22 @@ body.s5 {
 #io {
   transform: translateY(500px);
 }
+#name {
+  font-size: 64px;
+  transform: translateY(800px);
+}
+#url1, #url2, #url3 {
+  font-size: 44px;
+}
+#url1 {
+  transform: translateY(800px);
+}
+#url2 {
+  transform: translateX(-500px) translateY(200px);
+}
+#url3 {
+  transform: translateX(500px) translateY(250px);
+}
 .s26 {
 }
 .s26 #grpc {
@@ -633,5 +649,25 @@ body.s5 {
 }
 .s26 #io {
   opacity: 1;
-  transform: translateY(0px);
+  transform: translateY(-200px);
+}
+.s26 #name {
+  opacity: 1;
+  transform: translateY(-50px);
+  transition-delay: 0.8s;
+}
+.s26 #url1 {
+  opacity: 1;
+  transform: translateY(20px);
+  transition-delay: 1.4s;
+}
+.s26 #url2 {
+  opacity: 1;
+  transform: translateX(0px) translateY(200px);
+  transition-delay: 1.8s;
+}
+.s26 #url3 {
+  opacity: 1;
+  transform: translateX(0px) translateY(250px);
+  transition-delay: 2.2s;
 }

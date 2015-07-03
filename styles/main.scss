@@ -231,12 +231,22 @@ body.s5 {
     #grpc_d2{ opacity:1;transform:translateY(220px);transition-delay: 0s;}
 }
 #io{ transform:translateY(500px);}
+#name { font-size: 64px;transform:translateY(800px);}
+#url1,#url2,#url3 { font-size: 44px;}
+#url1{ transform:translateY(800px);}
+#url2{ transform:translateX(-500px) translateY(200px);}
+#url3{ transform:translateX(500px) translateY(250px);}
 .s26 {
     #grpc{ opacity:0;transform:translateY(-400px);}
     #grpc_d{ opacity:0;transform:translateY(-300px);}
     #grpc_d2{ opacity:0;transform:translateY(-280px);}
     #cloud_l{ opacity:0;transform:translateY(-370px);}
-    #io{ opacity:1;transform:translateY(0px);}
+    #io{ opacity:1;transform:translateY(-200px);}
+    #name{ opacity:1;transform:translateY(-50px);transition-delay: 0.8s;}
+    #url1{ opacity:1;transform:translateY(20px);transition-delay: 1.4s;}
+    #url2{ opacity:1;transform:translateX(0px) translateY(200px);transition-delay: 1.8s;}
+    #url3{ opacity:1;transform:translateX(0px) translateY(250px);transition-delay: 2.2s;}
+
 }
 
 
