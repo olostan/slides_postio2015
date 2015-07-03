@@ -231,12 +231,22 @@ body.s5 {
     #grpc_d2: show up(280) delay(0);
 }
 #io: down(500);
+#name { font-size: 64px;::down(800);}
+#url1,#url2,#url3 { font-size: 44px;}
+#url1: down(800);
+#url2: down(200) left(500);
+#url3: down(250) right(500);
 .s26 {
     #grpc: up(300) delay(0.5) hide;
     #grpc_d: up(400) hide;
     #grpc_d2: up(500) hide;
     #cloud_l: up(50) hide;
-    #io: up(500) show;
+    #io: up(700) show;
+    #name: up(850) show delay(0.8);
+    #url1: up(780) show delay(1.4);
+    #url2: right(500) show delay(1.8);
+    #url3: left(500) show delay(2.2);
+
 }
 
 
