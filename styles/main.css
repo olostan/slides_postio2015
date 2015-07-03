@@ -610,3 +610,28 @@ body.s5 {
   transform: translateY(220px);
   transition-delay: 0s;
 }
+#io {
+  transform: translateY(500px);
+}
+.s26 {
+}
+.s26 #grpc {
+  opacity: 0;
+  transform: translateY(-400px);
+}
+.s26 #grpc_d {
+  opacity: 0;
+  transform: translateY(-300px);
+}
+.s26 #grpc_d2 {
+  opacity: 0;
+  transform: translateY(-280px);
+}
+.s26 #cloud_l {
+  opacity: 0;
+  transform: translateY(-370px);
+}
+.s26 #io {
+  opacity: 1;
+  transform: translateY(0px);
+}

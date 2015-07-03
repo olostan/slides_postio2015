@@ -229,8 +229,14 @@ body.s5 {
     #grpc{ transform:translateY(-100px);transition-delay: 0.5s;}
     #grpc_d{ opacity:0.4;transform:translateY(100px);transition-delay: 0.3s;}
     #grpc_d2{ opacity:1;transform:translateY(220px);transition-delay: 0s;}
-
 }
-
+#io{ transform:translateY(500px);}
+.s26 {
+    #grpc{ opacity:0;transform:translateY(-400px);}
+    #grpc_d{ opacity:0;transform:translateY(-300px);}
+    #grpc_d2{ opacity:0;transform:translateY(-280px);}
+    #cloud_l{ opacity:0;transform:translateY(-370px);}
+    #io{ opacity:1;transform:translateY(0px);}
+}
 
 
